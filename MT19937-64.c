@@ -1,6 +1,4 @@
 #import "MT19937-64.h"
-@implementation MT19937_64
-@end
 /* 
  A C-program for MT19937-64 (2004/9/29 version).
  Coded by Takuji Nishimura and Makoto Matsumoto.

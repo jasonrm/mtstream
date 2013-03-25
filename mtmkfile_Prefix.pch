@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'mtmkfile' target in the 'mtmkfile' project.
-//
-
-#ifdef __OBJC__
-    #import <Foundation/Foundation.h>
-#endif
