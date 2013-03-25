@@ -42,7 +42,7 @@ double start_time;
 double end_time;
 
 int main (int argc, const char * argv[]) {
-    uint count = 0;
+    uint count = -1;
     uint seed = get_time();
     char *filename = NULL;
 
@@ -68,7 +68,7 @@ int main (int argc, const char * argv[]) {
     start_time = get_time();
     uint64_t i = 0;
     uint64_t j = 0;
-    for (j = 0; j < count; j++){
+    for (j = 0; j < count || count == -1; j++){
         for (i = 0; i < BUFFER_SIZE; i++){
             val[i] = genrand64_int64();
         }
