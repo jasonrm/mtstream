@@ -31,7 +31,7 @@ void get_args(int argc, char** argv, char** filename, uint *megabytes, uint *see
                     break;
                 case 's':	*seed = atoi(argv[++i]);
                     break;
-                case 'f':	*filename = argv[++i];
+                case 'f':   *filename = argv[++i];
                     break;
             }
         }
@@ -47,11 +47,6 @@ int main (int argc, const char * argv[]) {
     char *filename = NULL;
 
     get_args(argc, (char**)argv, &filename, &count, &seed);
-
-    if (count < 1){
-        printf("Usage : %s -c <number_of_megabytes> [-f <output_file>] [-s rand_seed]\n", argv[0]);
-        return -1;
-    }
 
     init_genrand64(seed);
 
